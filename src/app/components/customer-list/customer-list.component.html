@@ -1,0 +1,5 @@
+
+<li *ngFor="let customer of listCostumers">
+  {{customer.custId}}-{{customer.name}}-{{customer.email}}
+  <a [routerLink]="['/customer-edit',customer.custId]">Edit</a>
+</li>
